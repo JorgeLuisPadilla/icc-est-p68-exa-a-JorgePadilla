@@ -1,3 +1,7 @@
+import models.League;
+import models.Player;
+import models.Team;
+import controllers.LeagueController;
 
 public class App {
 
@@ -16,7 +20,33 @@ public class App {
          * [6] MLS USA = 51
          * [7] Liga MX Mexico = 46
          */
-        public static League[] getLeagues() {
+
+         public static void main(String[] args) {
+
+        System.out.println("EXAMEN INTERCICLO");
+        System.out.println("========================");
+
+        // crea arreglo de marcas
+
+        // =========================
+        // MOSTRAR ORIGINAL
+        // =========================
+
+        System.out.println("\nLISTA ORIGINAL:");
+
+        // recorre arreglo
+        League[] printLeagues;
+        for (League league : printLeagues) {
+
+            // imprime nombre y total validos
+            System.out.println(
+                league.getName()
+                + " - goles válidos: "
+                + league.getTotalActiveGoals()
+            );
+        }
+
+        public static League[] getLeague() {
 
                 // ===== Liga Pro Ecuador: total active goals = 42 =====
                 Player[] barcelonaPlayers = {
@@ -176,5 +206,6 @@ public class App {
                 // TODO: Realizar busqueda 2 e imprimir si se encontro o no
                 // Fila A: buscar 55 goles activos
                 // Fila B: buscar 40 goles activos
+                }
         }
 }
